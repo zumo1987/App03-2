@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Component
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    l.Action Sheets
+    <ion-button id="open-action-sheet">Open</ion-button>
+<ion-action-sheet trigger="open-action-sheet" header="Actions" [buttons]="actionSheetButtons"></ion-action-sheet>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+
+Alert</ion-label><ion-button id="present-alert">Click Me</ion-button>
+<ion-alert
+  trigger="present-alert"
+  header="ต้องการลบข้อมูลใช่ไหม"
+  [buttons]="alertButtons"
+></ion-alert>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+
+Aleat Input</ion-label><ion-button id="alertinput">Click Me</ion-button>
+<ion-alert
+  trigger="alertinput"
+  header="Please enter your info"
+  [buttons]="alertButtonsinput"
+  [inputs]="alertInputs"
+></ion-alert>
+  </ion-item>
+  <ion-itom>
+    
+  </ion-itom>
+</ion-content>
